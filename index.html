@@ -9,6 +9,15 @@
 <body>
     <script>
 
+        function calcSurface(lenght, width){
+            return lenght * width;    
+        }
+        
+        length = prompt("Donne moi la longueur d'un rectangle : ");
+        width = prompt("Donne moi la largeur d'un rectangle : ");
+        
+        surface = calcSurface(length, width);
+        console.log("La surface du rectangle est de : " + surface);
 
     </script>
 </body>
