@@ -8,17 +8,18 @@
 </head>
 <body>
     <script>
-
-        function calcSurface(lenght, width){
-            return lenght * width;    
-        }
-        
-        length = prompt("Donne moi la longueur d'un rectangle : ");
-        width = prompt("Donne moi la largeur d'un rectangle : ");
-        
-        surface = calcSurface(length, width);
-        console.log("La surface du rectangle est de : " + surface);
-
+        function calcDistance(A, B){
+            let x = B[0] - A[0];
+            let y = B[1] - A[1];
+            let distance = Math.sqrt(x ** 2 + y ** 2);
+            return distance.toFixed(2);
+          }
+          
+        let pointA = [1, 1];
+        let pointB = [2, 2];
+        let distance = calcDistance(pointA, pointB);
+        console.log(distance); // Output: 1.41
     </script>
+
 </body>
 </html>
